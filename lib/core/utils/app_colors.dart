@@ -6,9 +6,11 @@ class AppColors{
   static const Color secondaryColor = Color(0xFFF4FDFA);
   static const Color liveColor = Color(0xFF08C514);
   static const Color dotsColor = Color(0xffC0C0C0);
+  static const Color borderColor = Color(0xffF4F5FD);
 
   // Font Colors
   static const Color fontTitleColor = Color(0xFF1C1B1B);
   static const Color fontSubtitleColor = Color(0xFF6F7384);
   static const Color fontWhiteColor = Color(0xFFFFFFFF);
+  static const Color fontHintColor = Color(0xFFC0C0C0);
 }

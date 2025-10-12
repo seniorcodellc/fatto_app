@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: Center(child: Image.asset("assets/images/splash.png")),
+        body: Center(child: Image.asset("assets/images/logo.png")),
       ),
     );
   }

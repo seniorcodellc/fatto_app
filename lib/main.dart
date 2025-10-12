@@ -1,8 +1,8 @@
+import 'package:fatto/features/auth/presentation/screens/signup_screen.dart';
+import 'package:fatto/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
-
 import 'features/home/presentation/screens/home_screen.dart';
-import 'features/splash/presentation/screens/splash_screen.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 void main() {
   runApp(FattoApp());
 }
@@ -12,12 +12,16 @@ class FattoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: 'splash_screen',
-      routes: {
-        'splash_screen': (context) => SplashScreen(),
-        'home_screen': (context) => HomeScreen(),
+    return ScreenUtilInit(
+      designSize: const Size(430, 923),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      useInheritedMediaQuery: true,
+      builder: (BuildContext context, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: SignupScreen(),
+        );
       },
     );
   }
