@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'featueres/splash/presentation/screens/splash_screen.dart';
-import 'featueres/home/presentation/screens/home_screen.dart';
+
+import 'features/home/presentation/screens/home_screen.dart';
+import 'features/splash/presentation/screens/splash_screen.dart';
 
 void main() {
   runApp(FattoApp());
