@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+
+import 'package:fatto/core/utils/app_colors.dart';
+
+class AppStyles {
+  static TextStyle font15Grey = TextStyle(
+    fontSize: 15,
+    color: AppColors.fontSubtitleColor,
+  );
+  static TextStyle font18Black = TextStyle(
+    fontSize: 18,
+    color: AppColors.fontTitleColor,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle font10PrimaryColor = TextStyle(
+    fontSize: 10,
+    color: AppColors.primaryColor,
+    fontWeight: FontWeight.w600,
+  );
+}

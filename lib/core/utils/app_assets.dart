@@ -1,6 +1,4 @@
-import 'dart:ui';
-
-class AppAssets{
+class AppAssets {
   // icons
   static const String BackArrow = 'assets/icons/back_arrow.svg';
   static const String BackArrowIos = 'assets/icons/back_arrow_ios.svg';
@@ -8,8 +6,10 @@ class AppAssets{
   static const String Camera = 'assets/icons/camera.svg';
   static const String Cateogry = 'assets/icons/category.svg';
   static const String Cateogry_filled = 'assets/icons/category_filled.svg';
-  static const String ConfirmEmailVerification = 'assets/icons/confirm_email_verification.svg';
-  static const String CongratulationsIcon = 'assets/icons/congratulations_icon.svg';
+  static const String ConfirmEmailVerification =
+      'assets/icons/confirm_email_verification.svg';
+  static const String CongratulationsIcon =
+      'assets/icons/congratulations_icon.svg';
   static const String GetStartedIcon = 'assets/icons/get_started_icon.svg';
   static const String GoogleIcon = 'assets/icons/google_icon.svg';
   static const String Home = 'assets/icons/home.svg';
@@ -24,14 +24,22 @@ class AppAssets{
   static const String Warning = 'assets/icons/warning.svg';
   static const String Wishlist = 'assets/icons/wishlist.svg';
   static const String Wishlist_filled = 'assets/icons/wishlist_filled.svg';
- // images
+  static const String menu = 'assets/icons/menu.svg';
+  static const String search = 'assets/icons/search.svg';
+  static const String filter = 'assets/icons/filter.svg';
+  // images
   static const String Done = 'assets/images/done.png';
   static const String OnboardingBuy = 'assets/images/onboarding_buy.png';
   static const String OnboardingVisa = 'assets/images/onboarding_visa.png';
-  static const String OnboardingVoucher = 'assets/images/onboarding_voucher.png';
+  static const String OnboardingVoucher =
+      'assets/images/onboarding_voucher.png';
   static const String Product = 'assets/images/product.png';
   static const String Successfully = 'assets/images/successfully.png';
-
+  static const String appLogo = "assets/images/logo.png";
+  static const String homeAppBarLogo = "assets/images/home_app_bar_logo.png";
+  static const String userImage = "assets/images/user_image.png";
+  static const String productOfferImage =
+      "assets/images/product_offer_image.png";
   // translation
   static const String ArEG = 'assets/translations/ar-EG.json';
   static const String EnUS = 'assets/translations/en-US.json';
