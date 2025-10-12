@@ -14,7 +14,6 @@ class FattoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
       initialRoute: 'splash_screen',
       routes: {
         'splash_screen': (context) => SplashScreen(),
