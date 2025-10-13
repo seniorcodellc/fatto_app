@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../../../core/utils/app_colors.dart';
+import '../../../../../core/utils/app_colors.dart';
 class SignupText extends StatelessWidget {
-  const SignupText({super.key});
+  const SignupText({super.key, required this.title, required this.subTitle, required this.coloredText});
 
+  final String title;
+  final String subTitle;
+  final String coloredText;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,7 +16,7 @@ class SignupText extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Signup',
+            title,
             style: GoogleFonts.plusJakartaSans(
               fontWeight: FontWeight.bold,
               fontSize: 24.sp,
@@ -26,7 +28,7 @@ class SignupText extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: 'Already have an account? ',
+                  text: subTitle,
                   style: GoogleFonts.plusJakartaSans(
                     fontWeight: FontWeight.w600,
                     fontSize: 14.sp,
@@ -34,7 +36,7 @@ class SignupText extends StatelessWidget {
                   ),
                 ),
                 TextSpan(
-                  text: 'Login',
+                  text: coloredText,
                   style:  GoogleFonts.plusJakartaSans(
                     fontWeight: FontWeight.w600,
                     fontSize: 14.sp,

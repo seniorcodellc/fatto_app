@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 class OtpWidget extends StatelessWidget {
-  final Function(String) onCompleted;
+  final Function(String)? onCompleted;
   final Function(String)? onChanged;
 
   const OtpWidget({
     super.key,
-    required this.onCompleted,
+    this.onCompleted,
     this.onChanged,
   });
 
@@ -42,7 +42,7 @@ class OtpWidget extends StatelessWidget {
           animationDuration: const Duration(milliseconds: 300),
           enableActiveFill: true,
           onChanged: onChanged ?? (value) {},
-          onCompleted: onCompleted,
+          onCompleted: onCompleted ?? (value) {},
         ),
       ),
     );

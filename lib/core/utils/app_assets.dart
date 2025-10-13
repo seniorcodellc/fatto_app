@@ -1,5 +1,4 @@
-
-class AppAssets{
+class AppAssets {
   // icons
   static const String iconsAdd = 'assets/icons/add.svg';
   static const String iconsBackArrow = 'assets/icons/back_arrow.svg';
@@ -47,7 +46,8 @@ class AppAssets{
   static const String iconsWarning = 'assets/icons/warning.svg';
   static const String iconsWishlist = 'assets/icons/wishlist.svg';
   static const String iconsWishlistFilled = 'assets/icons/wishlist_filled.svg';
- // images
+  static const String iconSteps = 'assets/icons/steps_icon.svg';
+  // images
   static const String artPaintings = "assets/images/Art_Paintings.png";
   static const String cartEmpty = "assets/images/cart_empty.png";
   static const String completeOrder = "assets/images/complete_order.png";
@@ -58,7 +58,7 @@ class AppAssets{
   static const String handmadeGifts = 'assets/images/Handmade_Gifts.png';
   static const String handmadeSkincare = 'assets/images/Handmade_Skincare.png';
   static const String homeDecor = 'assets/images/home_decor.png';
-  static const String homeLogo = 'assets/images/home_logo.png';
+  static const String homeAppBarLogo = 'assets/images/home_app_bar_logo.png';
   static const String logo = 'assets/images/logo.png';
   static const String macrameWeaving = 'assets/images/MacrameWeaving.png';
   static const String onboardingBuy = 'assets/images/onboarding_buy.png';
@@ -75,8 +75,24 @@ class AppAssets{
   static const String splashNative = 'assets/images/splash_native.png';
   static const String toys = 'assets/images/toys.png';
   static const String wishlistEmpty = 'assets/images/wishlist_empty.png';
+  static const String userImage = 'assets/images/user_image.png';
+  static const String productOfferImage = 'assets/images/product_offer_image.png';
+  static const String clothing = 'assets/images/clothing.png';
+  static const String crochetKnitted = 'assets/images/crochet_knitted.png';
+  static const String embroideredClothing = 'assets/images/embroidered_clothing.png';
+  static const String handmadeDresses = 'assets/images/handmade_dresses.png';
+  static const String handmadeBags = 'assets/images/handmade_bags.png';
+  static const String beltsWallets = 'assets/images/belts_wallets.png';
+  static const String belts = 'assets/images/belts.png';
+  static const String jewelery = 'assets/images/jewelery.png';
+  static const String gold = 'assets/images/gold.png';
+  static const String gold2 = 'assets/images/gold2.png';
+  static const String m6 = 'assets/images/m6.png';
+  static const String waterproof = 'assets/images/waterproof.png';
+  static const String m6SmartWatch = 'assets/images/m6_smart_watch.png';
+  static const String loopSilicon = 'assets/images/loop_silicon.png';
 
   // translation
-  static const String ArEG = 'assets/translations/ar-EG.json';
-  static const String EnUS = 'assets/translations/en-US.json';
+  static const String arEG = 'assets/translations/ar-EG.json';
+  static const String enUS = 'assets/translations/en-US.json';
 }

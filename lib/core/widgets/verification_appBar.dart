@@ -1,6 +1,5 @@
 import 'package:fatto/core/utils/app_assets.dart';
 import 'package:fatto/core/utils/app_colors.dart';
-import 'package:fatto/core/widgets/h_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';

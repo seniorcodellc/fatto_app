@@ -23,12 +23,12 @@ class SignupGoogleButton extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 16.0.w),
         decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.circular(12.r),
-          border: Border.all(
-            color: AppColors.primaryColor,
-            width: 1.0
-          )
+            color: color,
+            borderRadius: BorderRadius.circular(12.r),
+            border: Border.all(
+                color: AppColors.primaryColor,
+                width: 1.0
+            )
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 18.0.h),

@@ -1,19 +1,14 @@
 import 'package:fatto/core/utils/app_colors.dart';
+import 'package:fatto/features/onboarding/data/models/onboarding_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-class OnboardingMainWidget extends StatelessWidget {
-  const OnboardingMainWidget({
-    super.key,
-    required this.title,
-    required this.subTitle,
-    required this.path,
+class OnboardingItem extends StatelessWidget {
+  const OnboardingItem({
+    super.key, required this.onboardingDataModel,
+
   });
-
-  final String title;
-  final String subTitle;
-  final String path;
-
+  final OnboardingDataModel onboardingDataModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,19 +32,19 @@ class OnboardingMainWidget extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 44.0, vertical: 70.0),
-                child: Image.asset(path),
+                child: Image.asset(onboardingDataModel.path),
               ),
             ],
           ),
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 44.w),
-          child: Text(title, textAlign: TextAlign.center, style: GoogleFonts.plusJakartaSans(fontSize: 24.sp, fontWeight: FontWeight.bold, color: AppColors.fontTitleColor,),
+          child: Text(onboardingDataModel.title, textAlign: TextAlign.center, style: GoogleFonts.plusJakartaSans(fontSize: 24.sp, fontWeight: FontWeight.bold, color: AppColors.fontTitleColor,),
           ),
         ),
         Padding(
           padding: EdgeInsets.only(left: 26.w, top: 16.h,bottom: 24.h,right: 26.w),
-          child: Text(subTitle, textAlign: TextAlign.center, style: GoogleFonts.plusJakartaSans(fontSize: 14.sp, fontWeight: FontWeight.w400, color: AppColors.fontSubtitleColor,
+          child: Text(onboardingDataModel.subTitle, textAlign: TextAlign.center, style: GoogleFonts.plusJakartaSans(fontSize: 14.sp, fontWeight: FontWeight.w400, color: AppColors.fontSubtitleColor,
             ),
           ),
         ),
