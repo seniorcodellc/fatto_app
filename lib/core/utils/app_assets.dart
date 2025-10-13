@@ -9,8 +9,10 @@ class AppAssets {
   static const String iconsCategory = 'assets/icons/category.svg';
   static const String iconsCategoryFilled = 'assets/icons/category_filled.svg';
   static const String iconsChangePassword = 'assets/icons/change_password.svg';
-  static const String iconsConfirmEmailVerification = 'assets/icons/confirm_email_verification.svg';
-  static const String iconsCongratulationsIcon = 'assets/icons/congratulations_icon.svg';
+  static const String iconsConfirmEmailVerification =
+      'assets/icons/confirm_email_verification.svg';
+  static const String iconsCongratulationsIcon =
+      'assets/icons/congratulations_icon.svg';
   static const String iconsDarkTheme = 'assets/icons/dark_theme.svg';
   static const String iconsEdit = 'assets/icons/edit.svg';
   static const String iconsFAQs = 'assets/icons/FAQs.svg';
@@ -28,7 +30,8 @@ class AppAssets {
   static const String iconsMyCart = 'assets/icons/my_cart.svg';
   static const String iconsMyCartFilled = 'assets/icons/my_cart_filled.svg';
   static const String iconsOrderHistory = 'assets/icons/order_history.svg';
-  static const String iconsPasswordEyeIcon = 'assets/icons/password_eye_icon.svg';
+  static const String iconsPasswordEyeIcon =
+      'assets/icons/password_eye_icon.svg';
   static const String iconsPayment = 'assets/icons/payment.svg';
   static const String iconsPaymentFilled = 'assets/icons/payment_filled.svg';
   static const String iconsPaypal = 'assets/icons/paypal.svg';
@@ -41,7 +44,8 @@ class AppAssets {
   static const String iconsShippingBox = 'assets/icons/shipping_box.svg';
   static const String iconsShippingFilled = 'assets/icons/shipping_filled.svg';
   static const String iconsStepsIcon = 'assets/icons/steps_icon.svg';
-  static const String iconsTermsConditions = 'assets/icons/terms_conditions.svg';
+  static const String iconsTermsConditions =
+      'assets/icons/terms_conditions.svg';
   static const String iconsTrash = 'assets/icons/trash.svg';
   static const String iconsWarning = 'assets/icons/warning.svg';
   static const String iconsWishlist = 'assets/icons/wishlist.svg';
@@ -63,9 +67,11 @@ class AppAssets {
   static const String macrameWeaving = 'assets/images/MacrameWeaving.png';
   static const String onboardingBuy = 'assets/images/onboarding_buy.png';
   static const String onboardingVisa = 'assets/images/onboarding_visa.png';
-  static const String onboardingVoucher = 'assets/images/onboarding_voucher.png';
+  static const String onboardingVoucher =
+      'assets/images/onboarding_voucher.png';
   static const String ongoingOrder = 'assets/images/ongoing_order.png';
-  static const String orderSuccessfully = 'assets/images/order_successfully.png';
+  static const String orderSuccessfully =
+      'assets/images/order_successfully.png';
   static const String potteryCeramics = 'assets/images/Pottery_Ceramics.png';
   static const String product = 'assets/images/product.png';
   static const String smartWatch = 'assets/images/smart_watch.png';
@@ -76,10 +82,12 @@ class AppAssets {
   static const String toys = 'assets/images/toys.png';
   static const String wishlistEmpty = 'assets/images/wishlist_empty.png';
   static const String userImage = 'assets/images/user_image.png';
-  static const String productOfferImage = 'assets/images/product_offer_image.png';
+  static const String productOfferImage =
+      'assets/images/product_offer_image.png';
   static const String clothing = 'assets/images/clothing.png';
   static const String crochetKnitted = 'assets/images/crochet_knitted.png';
-  static const String embroideredClothing = 'assets/images/embroidered_clothing.png';
+  static const String embroideredClothing =
+      'assets/images/embroidered_clothing.png';
   static const String handmadeDresses = 'assets/images/handmade_dresses.png';
   static const String handmadeBags = 'assets/images/handmade_bags.png';
   static const String beltsWallets = 'assets/images/belts_wallets.png';
@@ -91,6 +99,8 @@ class AppAssets {
   static const String waterproof = 'assets/images/waterproof.png';
   static const String m6SmartWatch = 'assets/images/m6_smart_watch.png';
   static const String loopSilicon = 'assets/images/loop_silicon.png';
+  static const String fashion1 = 'assets/images/fashion1.png';
+  static const String fashion2 = 'assets/images/fashion2.png';
 
   // translation
   static const String arEG = 'assets/translations/ar-EG.json';

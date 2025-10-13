@@ -17,4 +17,14 @@ class AppStyles {
     color: AppColors.primaryColor,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle font12White = TextStyle(
+    fontSize: 12,
+    color: AppColors.fontWhiteColor,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font24White = TextStyle(
+    fontSize: 24,
+    color: AppColors.fontWhiteColor,
+    fontWeight: FontWeight.w700,
+  );
 }
