@@ -1,3 +1,4 @@
+import 'package:fatto/features/auth/presentation/screens/number_verification_screen.dart';
 import 'package:fatto/features/auth/presentation/screens/signup_screen.dart';
 import 'package:fatto/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class FattoApp extends StatelessWidget {
       builder: (BuildContext context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SignupScreen(),
+          home: NumberVerificationScreen(),
         );
       },
     );
