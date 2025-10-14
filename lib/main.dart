@@ -11,6 +11,7 @@ import 'features/auth/forgot_password/screens/forgot_password1_screen.dart';
 import 'features/auth/login/presentation/screens/login_screen.dart';
 import 'features/auth/signup/presentation/screens/number_verification_screen.dart';
 import 'features/auth/signup/presentation/screens/signup_screen.dart';
+import 'features/categories/presentation/screens/categories_screen.dart';
 import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,6 +34,7 @@ class FattoApp extends StatelessWidget {
       useInheritedMediaQuery: true,
       builder: (BuildContext context, child) {
         return GetMaterialApp(
+          theme: ThemeData(scaffoldBackgroundColor: AppColors.fontWhiteColor),
           debugShowCheckedModeBanner: false,
           initialRoute: 'splash_screen',
           routes: {
@@ -48,6 +50,7 @@ class FattoApp extends StatelessWidget {
             'create_password_screen': (context) => CreatePasswordScreen(),
             'password_successfully_screen': (context) =>
                 PasswordSuccessfullyScreen(),
+            'categories_screen': (context) => CategoriesScreen(),
           },
         );
       },

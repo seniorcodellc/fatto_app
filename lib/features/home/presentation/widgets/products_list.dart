@@ -1,7 +1,8 @@
-import 'package:fatto/features/home/data/models/products_model.dart';
 import 'package:fatto/features/home/presentation/widgets/product_card.dart';
 import 'package:fatto/features/home/presentation/widgets/shared_list_titles.dart';
 import 'package:flutter/material.dart';
+
+import '../../data/static/model_products_list.dart';
 
 class ProductsList extends StatelessWidget {
   const ProductsList({super.key});
@@ -22,8 +23,10 @@ class ProductsList extends StatelessWidget {
             crossAxisSpacing: 8,
             mainAxisSpacing: 8,
             childAspectRatio: 0.68,
-            children: List.generate(ProductsModel.productsList.length, (index) {
-              final product = ProductsModel.productsList[index];
+            children: List.generate(ModelProductsList.productsList.length, (
+              index,
+            ) {
+              final product = ModelProductsList.productsList[index];
               return ProductCard(productsModel: product);
             }),
           ),

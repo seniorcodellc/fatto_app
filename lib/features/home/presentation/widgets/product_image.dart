@@ -22,9 +22,8 @@ class ProductImage extends StatelessWidget {
         SharedIconButton(
           onPressed: () {},
           iconPath: AppAssets.iconsLike,
-          width: 12,
-          height: 12,
-          size: 28,
+          iconWidth: 12,
+          iconHeight: 12,
           bgColor: AppColors.primaryColor,
         ),
       ],

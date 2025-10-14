@@ -4,29 +4,33 @@ import 'package:fatto/features/home/presentation/widgets/search_text_field.dart'
 import 'package:flutter/material.dart';
 
 import 'categories_list.dart';
+import 'custom_home_app_bar.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: Column(
-            children: [
-              SizedBox(height: 20),
-              SearchTextField(),
-              SizedBox(height: 20),
-              OfferedProductsSlider(),
-              SizedBox(height: 20),
-              CategoriesList(),
-              SizedBox(height: 14),
-            ],
+    return Scaffold(
+      appBar: CustomHomeAppBar(),
+      body: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                SizedBox(height: 20),
+                SearchTextField(),
+                SizedBox(height: 20),
+                OfferedProductsSlider(),
+                SizedBox(height: 20),
+                CategoriesList(),
+                SizedBox(height: 14),
+              ],
+            ),
           ),
-        ),
-        SliverFillRemaining(child: ProductsList()),
-      ],
+          SliverFillRemaining(child: ProductsList()),
+        ],
+      ),
     );
   }
 }

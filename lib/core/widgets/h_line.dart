@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HLine extends StatelessWidget {
-  HLine({Key? key, this.verticalPadding, this.color, this.thickness,this.width})
-      : super(key: key);
+  HLine({
+    super.key,
+    this.verticalPadding,
+    this.color,
+    this.thickness,
+    this.width,
+  });
   double? verticalPadding;
   double? thickness;
   Color? color;
@@ -14,7 +19,7 @@ class HLine extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: verticalPadding ?? 10.h),
       child: Container(
-        width: width?? double.infinity,
+        width: width ?? double.infinity,
         height: thickness ?? 2,
         color: color ?? AppColors.borderColor,
       ),
@@ -24,7 +29,7 @@ class HLine extends StatelessWidget {
 
 class VLine extends StatelessWidget {
   const VLine({Key? key, this.color, this.thik, this.padd, this.height})
-      : super(key: key);
+    : super(key: key);
   final Color? color;
   final double? thik;
   final double? padd;
