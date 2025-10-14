@@ -1,3 +1,5 @@
+import 'package:fatto/core/utils/app_colors.dart';
+import 'package:fatto/core/widgets/app_bottom_navigation_bar.dart';
 import 'package:fatto/features/home/presentation/widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(appBar: CustomHomeAppBar(), body: HomeBody()),
+      child: Scaffold(
+        backgroundColor: AppColors.fontWhiteColor,
+        appBar: CustomHomeAppBar(),
+        body: HomeBody(),
+        bottomNavigationBar: AppBottomNavigationBar(),
+      ),
     );
   }
 }

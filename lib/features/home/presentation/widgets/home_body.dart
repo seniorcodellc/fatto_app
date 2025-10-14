@@ -1,4 +1,5 @@
-import 'package:fatto/features/home/presentation/widgets/product_offer_container.dart';
+import 'package:fatto/features/home/presentation/widgets/offered_products_slider.dart';
+import 'package:fatto/features/home/presentation/widgets/products_list.dart';
 import 'package:fatto/features/home/presentation/widgets/search_text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -9,17 +10,17 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-      child: Column(
-        children: [
-          SearchTextField(),
-          SizedBox(height: 14),
-          ProductOfferContainer(),
-          SizedBox(height: 15),
-          CategoriesList(),
-        ],
-      ),
+    return Column(
+      children: [
+        SizedBox(height: 20),
+        SearchTextField(),
+        SizedBox(height: 20),
+        OfferedProductsSlider(),
+        SizedBox(height: 20),
+        CategoriesList(),
+        SizedBox(height: 18),
+        ProductsList(),
+      ],
     );
   }
 }
