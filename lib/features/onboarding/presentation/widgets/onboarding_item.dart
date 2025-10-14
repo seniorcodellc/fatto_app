@@ -1,6 +1,8 @@
 import 'package:fatto/core/utils/app_colors.dart';
+import 'package:fatto/features/home/presentation/screens/home_screen.dart';
 import 'package:fatto/features/onboarding/data/models/onboarding_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 class OnboardingItem extends StatelessWidget {
@@ -22,11 +24,14 @@ class OnboardingItem extends StatelessWidget {
           child:
           Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 18.0, top: 25.0),
-                child: Align(
-                  alignment: Alignment.topRight,
-                  child: Text('Skip for now', style: GoogleFonts.plusJakartaSans(color: AppColors.primaryColor, fontWeight: FontWeight.w500, fontSize: 14.sp, letterSpacing: 0.5,),
+              InkWell(
+                onTap: (){Get.to({HomeScreen()});},
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 18.0, top: 25.0),
+                  child: Align(
+                    alignment: Alignment.topRight,
+                    child: Text('Skip for now', style: GoogleFonts.plusJakartaSans(color: AppColors.primaryColor, fontWeight: FontWeight.w500, fontSize: 14.sp, letterSpacing: 0.5,),
+                    ),
                   ),
                 ),
               ),
