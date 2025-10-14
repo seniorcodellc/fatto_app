@@ -19,7 +19,10 @@ class CategoryCard extends StatelessWidget {
       alignment: Alignment.center,
       child: Column(
         children: [
-          Image.asset(categoryModel.categoryImage),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.asset(categoryModel.categoryImage),
+          ),
           Text(
             categoryModel.categoryName,
             style: AppStyles.font10PrimaryColor.copyWith(

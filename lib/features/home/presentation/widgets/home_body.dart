@@ -10,16 +10,22 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(height: 20),
-        SearchTextField(),
-        SizedBox(height: 20),
-        OfferedProductsSlider(),
-        SizedBox(height: 20),
-        CategoriesList(),
-        SizedBox(height: 18),
-        ProductsList(),
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              SearchTextField(),
+              SizedBox(height: 20),
+              OfferedProductsSlider(),
+              SizedBox(height: 20),
+              CategoriesList(),
+              SizedBox(height: 14),
+            ],
+          ),
+        ),
+        SliverFillRemaining(child: ProductsList()),
       ],
     );
   }
