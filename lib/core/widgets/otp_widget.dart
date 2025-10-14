@@ -15,7 +15,7 @@ class OtpWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.symmetric(vertical: 16.0.w),
+      padding:  EdgeInsets.symmetric(vertical: 16.0.h,horizontal: 12.0.w),
       child: Directionality(
         textDirection: TextDirection.ltr,
         child: PinCodeTextField(

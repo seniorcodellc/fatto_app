@@ -16,6 +16,7 @@ class CreatePasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ForgotPasswordAppBar(number: '03/03', title: 'Create Password',),
+      backgroundColor: AppColors.bgColor,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
