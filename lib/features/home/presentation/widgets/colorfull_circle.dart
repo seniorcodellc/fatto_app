@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ColorfullCircle extends StatelessWidget {
-  const ColorfullCircle({super.key, this.borderColor, required this.bgColor});
-  final Color? borderColor;
+  const ColorfullCircle({super.key, required this.bgColor});
   final Color bgColor;
   @override
   Widget build(BuildContext context) {
@@ -11,7 +10,7 @@ class ColorfullCircle extends StatelessWidget {
       height: 24,
       decoration: BoxDecoration(
         color: bgColor,
-        border: Border.all(color: borderColor ?? Colors.transparent, width: 2),
+        border: Border.all(width: 2),
         borderRadius: BorderRadius.circular(29),
       ),
     );

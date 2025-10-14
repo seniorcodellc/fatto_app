@@ -10,7 +10,9 @@ class ProductColors extends StatelessWidget {
     required this.bgColor2,
     required this.bgColor3,
     required this.num,
+    required this.bgColor1,
   });
+  final Color bgColor1;
   final Color bgColor2;
   final Color bgColor3;
   final int num;
@@ -22,10 +24,7 @@ class ProductColors extends StatelessWidget {
         Stack(
           clipBehavior: Clip.none,
           children: [
-            ColorfullCircle(
-              borderColor: AppColors.blue,
-              bgColor: AppColors.fontTitleColor,
-            ),
+            ColorfullCircle(bgColor: bgColor1),
             Positioned(left: 15, child: ColorfullCircle(bgColor: bgColor2)),
             Positioned(left: 28, child: ColorfullCircle(bgColor: bgColor3)),
           ],

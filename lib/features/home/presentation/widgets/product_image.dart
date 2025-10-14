@@ -12,11 +12,11 @@ class ProductImage extends StatelessWidget {
       alignment: AlignmentDirectional.topEnd,
       children: [
         Container(
-          width: 160,
+          width: 180,
           height: 138,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
-            image: DecorationImage(image: AssetImage(image)),
+            image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
           ),
         ),
         SharedIconButton(
@@ -24,7 +24,7 @@ class ProductImage extends StatelessWidget {
           iconPath: AppAssets.iconsLike,
           width: 12,
           height: 12,
-          size: 24,
+          size: 28,
           bgColor: AppColors.primaryColor,
         ),
       ],

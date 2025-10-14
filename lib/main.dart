@@ -4,14 +4,20 @@ import 'package:fatto/features/auth/forgot_password/screens/forgot_password_scre
 import 'package:fatto/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:fatto/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'core/utils/app_colors.dart';
 import 'features/auth/forgot_password/screens/forgot_password1_screen.dart';
 import 'features/auth/login/presentation/screens/login_screen.dart';
 import 'features/auth/signup/presentation/screens/number_verification_screen.dart';
 import 'features/auth/signup/presentation/screens/signup_screen.dart';
 import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(statusBarColor: AppColors.fontWhiteColor),
+  );
   runApp(FattoApp());
 }
 
@@ -34,12 +40,14 @@ class FattoApp extends StatelessWidget {
             'home_screen': (context) => HomeScreen(),
             'onboarding_screen': (context) => OnboardingScreen(),
             'signup_screen': (context) => SignupScreen(),
-            'number_verification_screen': (context) => NumberVerificationScreen(),
+            'number_verification_screen': (context) =>
+                NumberVerificationScreen(),
             'login_screen': (context) => LoginScreen(),
             'forgot_password1_screen': (context) => ForgotPassword1Screen(),
             'forgot_password2_screen': (context) => ForgotPassword2Screen(),
             'create_password_screen': (context) => CreatePasswordScreen(),
-            'password_successfully_screen': (context) => PasswordSuccessfullyScreen(),
+            'password_successfully_screen': (context) =>
+                PasswordSuccessfullyScreen(),
           },
         );
       },
