@@ -27,7 +27,7 @@ class ProductsList extends StatelessWidget {
               index,
             ) {
               final product = ModelProductsList.productsList[index];
-              return ProductCard(productsModel: product);
+              return ProductCard(productsModel: product, isLiked: true);
             }),
           ),
         ),

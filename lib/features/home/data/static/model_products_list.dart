@@ -1,6 +1,6 @@
+import '../../../../core/data/models/products_model.dart';
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
-import '../models/products_model.dart';
 
 class ModelProductsList {
   static List<ProductsModel> productsList = [

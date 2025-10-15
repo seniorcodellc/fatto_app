@@ -44,5 +44,9 @@ class AppStyles {
     fontSize: 14,
     color: AppColors.fontTitleColor,
     fontWeight: FontWeight.w600,
+  );  static TextStyle font16Black = TextStyle(
+    fontSize: 14,
+    color: AppColors.fontTitleColor,
+    fontWeight: FontWeight.w600,
   );
 }
