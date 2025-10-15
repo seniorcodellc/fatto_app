@@ -40,11 +40,11 @@ class AppStyles {
     color: AppColors.fontWhiteColor,
     fontWeight: FontWeight.w700,
   );
-  static TextStyle font14Black = TextStyle(
+  static TextStyle font14Black = GoogleFonts.plusJakartaSans(
     fontSize: 14,
     color: AppColors.fontTitleColor,
     fontWeight: FontWeight.w600,
-  );  static TextStyle font16Black = TextStyle(
+  );  static TextStyle font16Black = GoogleFonts.plusJakartaSans(
     fontSize: 14,
     color: AppColors.fontTitleColor,
     fontWeight: FontWeight.w600,
