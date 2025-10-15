@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomButton(buttonText: 'Login', onTap: (){Get.to(ForgotPassword1Screen());}),
               SizedBox(height: 16,),
-              SignupGoogleButton(buttonText: 'Signup With Google', onTap: () {  }, color: AppColors.fontWhiteColor),
+              SignupGoogleButton(buttonText: 'Signup With Google', onTap: () {  }, color: AppColors.bgColor),
               SizedBox(height: 180,),
               PrivacyPolicyText()
             ],

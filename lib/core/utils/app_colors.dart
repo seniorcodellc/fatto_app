@@ -12,8 +12,10 @@ class AppColors {
   static const Color iconBgColor = Color(0xffF2F2F2);
   static const Color borderColor = Color(0xFFF4F5FD);
   static const Color blue = Color(0xFF1F8BDA);
+  static const Color black = Color(0xFF1C1B1B);
   static const Color yellow = Color(0xFFFFCC00);
   static const Color brown = Color(0xFF5A1A05);
+  static const Color purple = Color(0xFF4F1FDA);
   static const Color transparent = Colors.transparent;
 
   // Font Colors

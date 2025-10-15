@@ -2,6 +2,7 @@ import 'package:fatto/features/auth/forgot_password/screens/password_successfull
 import 'package:fatto/features/auth/forgot_password/screens/create_password_screen.dart';
 import 'package:fatto/features/auth/forgot_password/screens/forgot_password_screen2.dart';
 import 'package:fatto/features/onboarding/presentation/screens/onboarding_screen.dart';
+import 'package:fatto/features/product_details/presentation/screens/product_details_screen.dart';
 import 'package:fatto/features/splash/presentation/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -40,14 +41,13 @@ class FattoApp extends StatelessWidget {
             'home_screen': (context) => HomeScreen(),
             'onboarding_screen': (context) => OnboardingScreen(),
             'signup_screen': (context) => SignupScreen(),
-            'number_verification_screen': (context) =>
-                NumberVerificationScreen(),
+            'number_verification_screen': (context) => NumberVerificationScreen(),
             'login_screen': (context) => LoginScreen(),
             'forgot_password1_screen': (context) => ForgotPassword1Screen(),
             'forgot_password2_screen': (context) => ForgotPassword2Screen(),
             'create_password_screen': (context) => CreatePasswordScreen(),
-            'password_successfully_screen': (context) =>
-                PasswordSuccessfullyScreen(),
+            'password_successfully_screen': (context) => PasswordSuccessfullyScreen(),
+            'product_details_screen': (context) => ProductDetailsScreen(),
           },
         );
       },

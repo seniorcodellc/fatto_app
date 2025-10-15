@@ -10,7 +10,7 @@ class ForgotPasswordAppBar extends StatelessWidget implements PreferredSizeWidge
  final String title;
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Padding(
         padding:  EdgeInsets.symmetric(vertical: 12.0.h,horizontal: 16.0.w),
         child: Row(

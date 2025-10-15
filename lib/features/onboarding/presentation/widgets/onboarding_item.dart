@@ -25,7 +25,9 @@ class OnboardingItem extends StatelessWidget {
           Column(
             children: [
               InkWell(
-                onTap: (){Get.to({HomeScreen()});},
+                onTap: () {
+                  Get.to(const HomeScreen());
+                },
                 child: Padding(
                   padding: const EdgeInsets.only(right: 18.0, top: 25.0),
                   child: Align(
