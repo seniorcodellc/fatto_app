@@ -24,9 +24,8 @@ class ProductDetailsAppBar extends StatelessWidget implements PreferredSizeWidge
             SharedIconButton(
               onPressed: () {},
               iconPath: AppAssets.iconsLike,
-              width: 18,
-              height: 18,
-              size: 36,
+              iconWidth: 18,
+              iconHeight: 18,
               bgColor: AppColors.primaryColor,
             ),
           ],

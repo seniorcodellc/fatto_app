@@ -21,9 +21,8 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           SharedIconButton(
             onPressed: () {},
             iconPath: AppAssets.iconsMenu,
-            width: 15.75,
-            height: 10.5,
-            size: 28,
+            iconWidth: 15.75,
+            iconHeight: 10.5,
             bgColor: AppColors.iconBgColor,
           ),
           Image.asset(AppAssets.homeAppBarLogo, width: 30.06, height: 47.65),

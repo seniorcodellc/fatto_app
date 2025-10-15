@@ -6,27 +6,25 @@ class SharedIconButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.iconPath,
-    required this.width,
-    required this.height,
-    required this.size,
+    required this.iconWidth,
+    required this.iconHeight,
     required this.bgColor,
   });
   final void Function() onPressed;
   final String iconPath;
-  final double width;
-  final double height;
-  final double size;
+  final double iconWidth;
+  final double iconHeight;
   final Color bgColor;
   @override
   Widget build(BuildContext context) {
     return IconButton(
       style: IconButton.styleFrom(
         backgroundColor: bgColor,
-        minimumSize: Size(size, size),
-        maximumSize: Size(size, size),
+        minimumSize: Size(28, 28),
+        maximumSize: Size(28, 28),
       ),
       onPressed: onPressed,
-      icon: SvgPicture.asset(iconPath, width: width, height: height),
+      icon: SvgPicture.asset(iconPath, width: iconWidth, height: iconHeight),
     );
   }
 }

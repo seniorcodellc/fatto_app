@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import '../../../../core/utils/app_colors.dart';
-import '../../../../core/utils/app_styles.dart';
 import '../../data/models/category_model.dart';
 
 class CategoryCard extends StatelessWidget {
-  const CategoryCard({super.key, required this.categoryModel});
+  const CategoryCard({
+    super.key,
+    required this.categoryModel,
+    required this.textStyle,
+    required this.width,
+    required this.height,
+  });
   final CategoryModel categoryModel;
+  final TextStyle textStyle;
+  final double width;
+  final double height;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,17 +25,17 @@ class CategoryCard extends StatelessWidget {
       ),
       alignment: Alignment.center,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Image.asset(categoryModel.categoryImage),
-          ),
-          Text(
-            categoryModel.categoryName,
-            style: AppStyles.font10PrimaryColor.copyWith(
-              color: AppColors.fontTitleColor,
+            padding: const EdgeInsets.symmetric(vertical: 3),
+            child: Image.asset(
+              categoryModel.categoryImage,
+              width: width,
+              height: height,
             ),
           ),
+          Text(categoryModel.categoryName, style: textStyle),
         ],
       ),
     );

@@ -1,5 +1,1 @@
-import 'app_assets.dart';
-
-class AppStrings {
-
-}
+class AppStrings {}
