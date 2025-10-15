@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 1), () {
-      Navigator.pushNamed(context, "product_details_screen");
+      Navigator.pushNamed(context, "nav_screen");
     });
   }
 

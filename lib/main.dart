@@ -1,6 +1,7 @@
 import 'package:fatto/features/auth/forgot_password/screens/password_successfully_screen.dart';
 import 'package:fatto/features/auth/forgot_password/screens/create_password_screen.dart';
 import 'package:fatto/features/auth/forgot_password/screens/forgot_password_screen2.dart';
+import 'package:fatto/features/categories/presentation/screens/product_listing_screen.dart';
 import 'package:fatto/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:fatto/features/product_details/presentation/screens/product_details_screen.dart';
 import 'package:fatto/features/splash/presentation/screens/splash_screen.dart';
@@ -12,6 +13,7 @@ import 'features/auth/forgot_password/screens/forgot_password1_screen.dart';
 import 'features/auth/login/presentation/screens/login_screen.dart';
 import 'features/auth/signup/presentation/screens/number_verification_screen.dart';
 import 'features/auth/signup/presentation/screens/signup_screen.dart';
+import 'features/bottom_navigation_bar/presentation/screens/custom_bottom_nav_bar.dart';
 import 'features/categories/presentation/screens/categories_screen.dart';
 import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -51,9 +53,13 @@ class FattoApp extends StatelessWidget {
             'product_details_screen': (context) => ProductDetailsScreen(),
             'password_successfully_screen': (context) =>PasswordSuccessfullyScreen(),
             'categories_screen': (context) => CategoriesScreen(),
+            'fashion': (context) => ProductListingScreen(),
+            'nav_screen': (context) => CustomBottomNavBar(),
           },
         );
       },
     );
   }
 }
+
+class ProductListScreen {}

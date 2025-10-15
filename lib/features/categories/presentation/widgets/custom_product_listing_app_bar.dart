@@ -19,7 +19,7 @@ class CustomProductListingAppBar extends StatelessWidget
           SizedBox(width: 90),
           Text("Jewelry", style: AppStyles.font16Black),
           SizedBox(width: 55),
-          SharedSettingsAndSearchIcons(icon: AppAssets.iconSetting),
+          SharedSettingsAndSearchIcons(icon: AppAssets.iconsSetting),
           SizedBox(width: 12),
           SharedSettingsAndSearchIcons(icon: AppAssets.iconsSearch),
         ],

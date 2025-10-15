@@ -1,4 +1,5 @@
 import 'package:fatto/core/utils/app_assets.dart';
+import 'package:fatto/core/widgets/shared_back_arrow_button_icon_ios.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,23 +16,7 @@ class CustomCategoriesAppBar extends StatelessWidget
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
       child: Row(
         children: [
-          IconButton(
-            style: IconButton.styleFrom(
-              fixedSize: Size(48, 48),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-                side: BorderSide(width: 0.1),
-              ),
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: SvgPicture.asset(
-              AppAssets.iconsBackArrowIos,
-              width: 6,
-              height: 11,
-            ),
-          ),
+          SharedBackArrowButtonIconIOS(),
           SizedBox(width: 85),
           Text(
             "Categories",

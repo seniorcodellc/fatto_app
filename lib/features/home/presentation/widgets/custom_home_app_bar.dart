@@ -1,6 +1,6 @@
-import 'package:fatto/core/widgets/shared_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
 
@@ -18,12 +18,18 @@ class CustomHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SharedIconButton(
+          IconButton(
+            style: IconButton.styleFrom(
+              fixedSize: Size(28, 28),
+              backgroundColor: AppColors.iconBgColor,
+            ),
             onPressed: () {},
-            iconPath: AppAssets.iconsMenu,
-            iconWidth: 15.75,
-            iconHeight: 10.5,
-            bgColor: AppColors.iconBgColor,
+            icon: SvgPicture.asset(
+              AppAssets.iconsMenu,
+              width: 15.75,
+              height: 10.5,
+              color: AppColors.iconColor,
+            ),
           ),
           Image.asset(AppAssets.homeAppBarLogo, width: 30.06, height: 47.65),
           SizedBox(

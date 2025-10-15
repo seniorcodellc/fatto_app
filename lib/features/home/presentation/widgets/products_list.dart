@@ -2,7 +2,7 @@ import 'package:fatto/features/home/presentation/widgets/product_card.dart';
 import 'package:fatto/features/home/presentation/widgets/shared_list_titles.dart';
 import 'package:flutter/material.dart';
 
-import '../../data/static/model_products_list.dart';
+import '../../../../core/data/static/model_products_list.dart';
 
 class ProductsList extends StatelessWidget {
   const ProductsList({super.key});

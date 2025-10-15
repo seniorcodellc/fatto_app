@@ -14,7 +14,7 @@ class CategoriesBody extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisSpacing: 8,
-      mainAxisSpacing: 2,
+      mainAxisSpacing: 8,
       childAspectRatio: 1.5,
       children: List.generate(ModelCategoriesList.categoryList.length, (index) {
         final model = ModelCategoriesList.categoryList[index];

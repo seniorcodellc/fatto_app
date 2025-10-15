@@ -3,8 +3,8 @@ import 'dart:ui';
 import 'package:fatto/core/utils/app_colors.dart';
 
 class ProductStatics{
-  static const List<Color> colors = [
-    AppColors.black,
+  static  List<Color> colors = [
+    AppColors.fontTitleColor,
     AppColors.fontSubtitleColor,
     AppColors.purple,
     AppColors.blue,

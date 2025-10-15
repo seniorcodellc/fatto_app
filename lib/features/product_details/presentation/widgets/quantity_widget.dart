@@ -46,7 +46,7 @@ class QuantityWidget extends StatelessWidget {
                     child: Text('0', style: GoogleFonts.plusJakartaSans(fontSize: 16.sp, fontWeight: FontWeight.w600, color: AppColors.fontTitleColor, letterSpacing: 0.25,),
                     ),
                   ),
-                  SvgPicture.asset(AppAssets.iconsAdd,color: AppColors.black,),
+                  SvgPicture.asset(AppAssets.iconsAdd,color: AppColors.fontTitleColor,),
                 ],
               ),
             ),

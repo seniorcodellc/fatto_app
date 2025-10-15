@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/route_manager.dart';
-
 import '../../../../core/utils/app_assets.dart';
 import '../../../../core/utils/app_colors.dart';
-import '../../../../core/widgets/shared_icon_button.dart';
 class ProductDetailsAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ProductDetailsAppBar({super.key});
 
@@ -21,12 +19,25 @@ class ProductDetailsAppBar extends StatelessWidget implements PreferredSizeWidge
             InkWell(
               onTap: (){Get.off(HomeScreen());},
                 child: SvgPicture.asset(AppAssets.iconsBackArrow)),
-            SharedIconButton(
-              onPressed: () {},
-              iconPath: AppAssets.iconsLike,
-              iconWidth: 18,
-              iconHeight: 18,
-              bgColor: AppColors.primaryColor,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: 27,
+                height: 27,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(24),
+                  color: AppColors.primaryColor
+                ),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: SvgPicture.asset(
+                    AppAssets.iconsLike,
+                    width: 15,
+                    height: 15,
+                    color: AppColors.fontWhiteColor,
+                  ),
+                ),
+              ),
             ),
           ],
         ),
