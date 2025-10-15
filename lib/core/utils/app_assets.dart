@@ -51,6 +51,7 @@ class AppAssets {
   static const String iconsWishlist = 'assets/icons/wishlist.svg';
   static const String iconsWishlistFilled = 'assets/icons/wishlist_filled.svg';
   static const String iconSteps = 'assets/icons/steps_icon.svg';
+  static const String iconsSetting = 'assets/icons/setting.svg';
   // images
   static const String artPaintings = "assets/images/Art_Paintings.png";
   static const String cartEmpty = "assets/images/cart_empty.png";

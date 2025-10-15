@@ -16,27 +16,32 @@ class CategoryCard extends StatelessWidget {
   final double height;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 76,
-      height: 60,
-      decoration: BoxDecoration(
-        border: Border.all(color: AppColors.borderColor, width: 1),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      alignment: Alignment.center,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 3),
-            child: Image.asset(
-              categoryModel.categoryImage,
-              width: width,
-              height: height,
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, categoryModel.routeName);
+      },
+      child: Container(
+        width: 76,
+        height: 60,
+        decoration: BoxDecoration(
+          border: Border.all(color: AppColors.borderColor, width: 1),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 3),
+              child: Image.asset(
+                categoryModel.categoryImage,
+                width: width,
+                height: height,
+              ),
             ),
-          ),
-          Text(categoryModel.categoryName, style: textStyle),
-        ],
+            Text(categoryModel.categoryName, style: textStyle),
+          ],
+        ),
       ),
     );
   }

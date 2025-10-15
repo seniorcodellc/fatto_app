@@ -11,7 +11,7 @@ class AppBottomNavigationBar extends StatelessWidget {
     required this.onTap,
   });
   final int selectedIndex;
-  final void Function(int) onTap;
+  final void Function(int)? onTap;
   @override
   Widget build(BuildContext context) {
     return Container(

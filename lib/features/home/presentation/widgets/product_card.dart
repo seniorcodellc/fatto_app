@@ -1,18 +1,23 @@
-import 'package:fatto/features/home/data/models/products_model.dart';
+import 'package:fatto/core/data/models/products_model.dart';
 import 'package:fatto/features/home/presentation/widgets/product_colors.dart';
 import 'package:fatto/features/home/presentation/widgets/product_image.dart';
 import 'package:fatto/features/home/presentation/widgets/product_name_and_price.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({super.key, required this.productsModel});
+  const ProductCard({
+    super.key,
+    required this.productsModel,
+    required this.isLiked,
+  });
   final ProductsModel productsModel;
+  final bool isLiked;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ProductImage(image: productsModel.productImage),
+        ProductImage(image: productsModel.productImage, isLiked: isLiked),
         SizedBox(height: 8),
         ProductColors(
           bgColor2: productsModel.bgColor2,

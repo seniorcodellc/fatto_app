@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:fatto/core/utils/app_colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppStyles {
-  static TextStyle font15Grey = TextStyle(
+  static TextStyle font15Grey = GoogleFonts.plusJakartaSans(
     fontSize: 15,
     color: AppColors.fontSubtitleColor,
   );
@@ -29,6 +30,11 @@ class AppStyles {
   );
   static TextStyle font14Black = TextStyle(
     fontSize: 14,
+    color: AppColors.fontTitleColor,
+    fontWeight: FontWeight.w600,
+  );
+  static TextStyle font16Black = TextStyle(
+    fontSize: 16,
     color: AppColors.fontTitleColor,
     fontWeight: FontWeight.w600,
   );
