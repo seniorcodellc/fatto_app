@@ -61,5 +61,3 @@ class FattoApp extends StatelessWidget {
     );
   }
 }
-
-class ProductListScreen {}
