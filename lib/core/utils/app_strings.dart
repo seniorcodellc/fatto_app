@@ -1,1 +1,3 @@
-class AppStrings {}
+class AppStrings {
+  // ToDo :
+}
