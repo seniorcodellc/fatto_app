@@ -1,5 +1,5 @@
 import 'package:fatto/core/utils/app_colors.dart';
-import 'package:fatto/features/home/presentation/screens/home_screen.dart';
+import 'package:fatto/features/bottom_navigation_bar/presentation/screens/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../core/widgets/custom_button.dart';
@@ -17,7 +17,7 @@ class PasswordSuccessfullyScreen extends StatelessWidget {
           child: Column(
             children: [
               SetPasswordSuccessfullyWidget(),
-              CustomButton(buttonText: 'Login', onTap: () {Get.to(HomeScreen());},),
+              CustomButton(buttonText: 'Login', onTap: () {Get.to(CustomBottomNavBar());},),
             ],
           ),
         ),

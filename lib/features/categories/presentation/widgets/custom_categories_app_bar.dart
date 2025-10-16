@@ -6,10 +6,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
-class CustomCategoriesAppBar extends StatelessWidget
-    implements PreferredSizeWidget {
-  const CustomCategoriesAppBar({super.key});
-
+class CustomCategoriesAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CustomCategoriesAppBar({super.key, required this.title});
+final String title ;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,7 +18,7 @@ class CustomCategoriesAppBar extends StatelessWidget
           SharedBackArrowButtonIconIOS(),
           SizedBox(width: 85),
           Text(
-            "Categories",
+            title,
             style: AppStyles.font24White.copyWith(
               color: AppColors.fontTitleColor,
             ),

@@ -48,6 +48,6 @@ class AppStyles {
   static TextStyle font16Black = GoogleFonts.plusJakartaSans(
     fontSize: 16,
     color: AppColors.fontTitleColor,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w700,
   );
 }

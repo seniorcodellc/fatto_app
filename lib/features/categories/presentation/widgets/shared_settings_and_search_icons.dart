@@ -18,8 +18,9 @@ class SharedSettingsAndSearchIcons extends StatelessWidget {
         fixedSize: Size(48, 48),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: BorderSide(width: 0.1),
-        ),
+          side: BorderSide(width: 0.6,color: AppColors.lightGrey),
+
+      ),
       ),
       onPressed: onPressed,
       icon: SvgPicture.asset(

@@ -23,7 +23,7 @@ class BottomNavBarStatics {
       screen: CategoriesScreen(),
       unSelectedIcon: AppAssets.iconsCategory,
       selectedIcon: AppAssets.iconsCategoryFilled,
-      appBar: CustomCategoriesAppBar(),
+      appBar: CustomCategoriesAppBar(title: 'Categories',),
     ),
     BottomNavBarModel(
       title: "My Cart",

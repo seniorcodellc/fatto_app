@@ -10,7 +10,7 @@ class ColorfullCircle extends StatelessWidget {
       height: 24,
       decoration: BoxDecoration(
         color: bgColor,
-        border: Border.all(width: 2),
+        border: Border.all(width: 0.5),
         borderRadius: BorderRadius.circular(29),
       ),
     );

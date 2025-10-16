@@ -9,7 +9,7 @@ class ProductListingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: CustomProductListingAppBar(),
+        appBar: CustomProductListingAppBar(title: 'Jewelry',),
         body: ProductListingBody(),
       ),
     );

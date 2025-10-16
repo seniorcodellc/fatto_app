@@ -15,6 +15,7 @@ class AppColors {
   static const Color transparent = Colors.transparent;
   static const Color iconColor = Color(0xFF878787);
   static const Color purple = Color(0xFF4F1FDA);
+  static const Color lightGrey = Color(0xFFEAECF0);
 
   // Font Colors
   static const Color fontTitleColor = Color(0xFF1C1B1B);

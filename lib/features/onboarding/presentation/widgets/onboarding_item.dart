@@ -1,5 +1,5 @@
 import 'package:fatto/core/utils/app_colors.dart';
-import 'package:fatto/features/home/presentation/screens/home_screen.dart';
+import 'package:fatto/features/bottom_navigation_bar/presentation/screens/custom_bottom_nav_bar.dart';
 import 'package:fatto/features/onboarding/data/models/onboarding_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -26,7 +26,7 @@ class OnboardingItem extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Get.to(const HomeScreen());
+                  Get.to(const CustomBottomNavBar());
                 },
                 child: Padding(
                   padding: const EdgeInsets.only(right: 18.0, top: 25.0),

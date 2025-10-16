@@ -11,7 +11,7 @@ class ProductListingBody extends StatelessWidget {
     return GridView.count(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
       crossAxisCount: 2,
-      childAspectRatio: 0.7,
+      childAspectRatio: 0.8,
       shrinkWrap: true,
       physics: const BouncingScrollPhysics(),
       crossAxisSpacing: 8,
