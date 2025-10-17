@@ -8,7 +8,7 @@ import '../../../../core/utils/app_styles.dart';
 class CustomProductListingAppBar extends StatelessWidget
     implements PreferredSizeWidget {
   const CustomProductListingAppBar({super.key, required this.title});
- final String title;
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,7 +24,6 @@ class CustomProductListingAppBar extends StatelessWidget
               SharedSettingsAndSearchIcons(icon: AppAssets.iconsSetting),
               SizedBox(width: 12),
               SharedSettingsAndSearchIcons(icon: AppAssets.iconsSearch),
-
             ],
           ),
         ],

@@ -47,13 +47,15 @@ class FattoApp extends StatelessWidget {
             'home_screen': (context) => HomeScreen(),
             'onboarding_screen': (context) => OnboardingScreen(),
             'signup_screen': (context) => SignupScreen(),
-            'number_verification_screen': (context) => NumberVerificationScreen(),
+            'number_verification_screen': (context) =>
+                NumberVerificationScreen(),
             'login_screen': (context) => LoginScreen(),
             'forgot_password1_screen': (context) => ForgotPassword1Screen(),
             'forgot_password2_screen': (context) => ForgotPassword2Screen(),
             'create_password_screen': (context) => CreatePasswordScreen(),
             'product_details_screen': (context) => ProductDetailsScreen(),
-            'password_successfully_screen': (context) =>PasswordSuccessfullyScreen(),
+            'password_successfully_screen': (context) =>
+                PasswordSuccessfullyScreen(),
             'categories_screen': (context) => CategoriesScreen(),
             'fashion': (context) => ProductListingScreen(),
             'nav_screen': (context) => CustomBottomNavBar(),

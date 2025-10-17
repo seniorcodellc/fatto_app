@@ -1,6 +1,10 @@
 class AppAssets {
   // icons
   static const String iconsAdd = 'assets/icons/add.svg';
+  static const String tick = 'assets/icons/tick.svg';
+  static const String tickFilled = 'assets/icons/tick-filled.svg';
+
+  static const String iconsSearchNormal = 'assets/icons/search-normal.svg';
   static const String iconsBackArrow = 'assets/icons/back_arrow.svg';
   static const String iconsBackArrowIos = 'assets/icons/back_arrow_ios.svg';
   static const String iconsBike = 'assets/icons/bike.svg';

@@ -1,13 +1,13 @@
-import 'package:fatto/core/utils/app_assets.dart';
 import 'package:fatto/core/utils/app_colors.dart';
 import 'package:fatto/core/utils/app_styles.dart';
 import 'package:fatto/core/widgets/custom_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SearchTextField extends StatelessWidget {
-  const SearchTextField({super.key});
+import '../../../../core/utils/app_assets.dart';
 
+class HomeSearchTextField extends StatelessWidget {
+  const HomeSearchTextField({super.key});
   @override
   Widget build(BuildContext context) {
     return CustomPadding(
