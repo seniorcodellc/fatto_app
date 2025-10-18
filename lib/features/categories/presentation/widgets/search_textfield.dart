@@ -1,4 +1,3 @@
-import 'package:fatto/core/widgets/custom_button.dart';
 import 'package:fatto/features/categories/presentation/widgets/filter_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

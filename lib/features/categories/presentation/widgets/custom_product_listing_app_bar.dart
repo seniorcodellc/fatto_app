@@ -23,7 +23,12 @@ class CustomProductListingAppBar extends StatelessWidget
             children: [
               SharedSettingsAndSearchIcons(icon: AppAssets.iconsSetting),
               SizedBox(width: 12),
-              SharedSettingsAndSearchIcons(icon: AppAssets.iconsSearch),
+              SharedSettingsAndSearchIcons(
+                icon: AppAssets.iconsSearchNormal,
+                onPressed: () {
+                  Navigator.pushNamed(context, 'search_screen');
+                },
+              ),
             ],
           ),
         ],

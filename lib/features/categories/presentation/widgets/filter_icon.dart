@@ -20,7 +20,7 @@ class FilterIcon extends StatelessWidget {
             width: double.infinity,
             height: 380,
             decoration: BoxDecoration(
-              color: AppColors.borderColor,
+              color: AppColors.fontWhiteColor,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(24),
                 topRight: Radius.circular(24),

@@ -1,6 +1,7 @@
 import 'package:fatto/features/auth/forgot_password/screens/password_successfully_screen.dart';
 import 'package:fatto/features/auth/forgot_password/screens/create_password_screen.dart';
 import 'package:fatto/features/auth/forgot_password/screens/forgot_password_screen2.dart';
+import 'package:fatto/features/categories/presentation/screens/search_screen.dart';
 import 'package:fatto/features/home/presentation/screens/exclusive_sales_screen.dart';
 import 'package:fatto/features/categories/presentation/screens/fashion_screen.dart';
 import 'package:fatto/features/categories/presentation/screens/product_listing_screen.dart';
@@ -61,6 +62,7 @@ class FattoApp extends StatelessWidget {
             'nav_screen': (context) => CustomBottomNavBar(),
             'fashion_screen': (context) => FashionScreen(),
             'sales_screen': (context) => ExclusiveSalesScreen(),
+            'search_screen': (context) => SearchScreen(),
           },
         );
       },
