@@ -1,8 +1,10 @@
 class AppAssets {
   // icons
   static const String iconsAdd = 'assets/icons/add.svg';
+  static const String iconsFrontArrow = 'assets/icons/front_arrow.svg';
   static const String tick = 'assets/icons/tick.svg';
   static const String tickFilled = 'assets/icons/tick-filled.svg';
+  static const String logOut = 'assets/icons/logout.svg';
 
   static const String iconsSearchNormal = 'assets/icons/search-normal.svg';
   static const String iconsBackArrow = 'assets/icons/back_arrow.svg';
@@ -58,6 +60,7 @@ class AppAssets {
   static const String iconsSetting = 'assets/icons/setting.svg';
   static const String iconsStar = 'assets/icons/star.svg';
   // images
+  static const String profileImage = 'assets/images/profileImage.png';
   static const String artPaintings = "assets/images/Art_Paintings.png";
   static const String cartEmpty = "assets/images/cart_empty.png";
   static const String completeOrder = "assets/images/complete_order.png";
