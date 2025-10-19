@@ -21,6 +21,14 @@ import 'features/categories/presentation/screens/categories_screen.dart';
 import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'features/profile/presentation/screens/change_password_screen.dart';
+import 'features/profile/presentation/screens/faqs_screen.dart';
+import 'features/profile/presentation/screens/order_history_screen.dart';
+import 'features/profile/presentation/screens/payment_method_screen.dart';
+import 'features/profile/presentation/screens/privacy_policy_screen.dart';
+import 'features/profile/presentation/screens/shipping_address_screen.dart';
+import 'features/profile/presentation/screens/terms_and_conditions_screen.dart';
+
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(statusBarColor: AppColors.fontWhiteColor),
@@ -63,9 +71,19 @@ class FattoApp extends StatelessWidget {
             'fashion_screen': (context) => FashionScreen(),
             'sales_screen': (context) => ExclusiveSalesScreen(),
             'search_screen': (context) => SearchScreen(),
+            'change_password_screen': (context) => ChangePasswordScreen(),
+            'faqs_screen': (context) => FAQsScreen(),
+            'order_history_screen': (context) => OrderHistoryScreen(),
+            'payment_method_screen': (context) => PaymentMethodScreen(),
+            'shipping_address_screen': (context) => ShippingAddressScreen(),
+            'privacy_policy_screen': (context) => PrivacyPolicyScreen(),
+            'terms_and_conditions_screen': (context) =>
+                TermsAndConditionsScreen(),
           },
         );
       },
     );
   }
 }
+
+class FaqsScreen {}
