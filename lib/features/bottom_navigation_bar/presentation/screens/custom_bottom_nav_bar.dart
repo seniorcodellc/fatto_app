@@ -2,7 +2,6 @@ import 'package:fatto/core/utils/app_styles.dart';
 import 'package:fatto/features/bottom_navigation_bar/data/statics/bottom_nav_bar_statics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/utils/app_colors.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
   const CustomBottomNavBar({super.key});
