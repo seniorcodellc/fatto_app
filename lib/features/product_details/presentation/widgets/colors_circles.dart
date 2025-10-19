@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/app_styles.dart';
 class ColorsCircles extends StatelessWidget {
   const ColorsCircles({super.key});
 
@@ -18,12 +19,7 @@ class ColorsCircles extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 8.h),
             child: Text(
               'Color:',
-              style: GoogleFonts.plusJakartaSans(
-                fontSize: 15.sp,
-                fontWeight: FontWeight.w700,
-                color: AppColors.fontTitleColor,
-                letterSpacing: 0.5,
-              ),
+                style: AppStyles.font16Black
             ),
           ),
           SizedBox(

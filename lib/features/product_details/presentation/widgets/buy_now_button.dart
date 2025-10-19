@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../../core/utils/app_colors.dart';
 class BuyNowButton extends StatelessWidget {
-  const BuyNowButton({super.key, this.onTap});
+  const BuyNowButton({super.key, this.onTap, required this.borderColor});
 
   final VoidCallbackAction? onTap ;
-
+  final Color borderColor;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -16,7 +16,7 @@ class BuyNowButton extends StatelessWidget {
           color: AppColors.bgColor,
           borderRadius: BorderRadius.circular(12.r),
           border: Border.all(
-            color: AppColors.primaryColor,
+            color: borderColor,
           ),
         ),
         child: Padding(

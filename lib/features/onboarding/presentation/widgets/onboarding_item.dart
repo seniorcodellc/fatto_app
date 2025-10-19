@@ -24,7 +24,8 @@ class OnboardingItem extends StatelessWidget {
           child:
           Column(
             children: [
-              InkWell(
+              GestureDetector(
+                behavior: HitTestBehavior.translucent,
                 onTap: () {
                   Get.to(const CustomBottomNavBar());
                 },

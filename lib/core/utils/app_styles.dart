@@ -8,6 +8,10 @@ class AppStyles {
     fontSize: 15,
     color: AppColors.fontSubtitleColor,
   );
+  static TextStyle font12Grey = GoogleFonts.plusJakartaSans(
+    fontSize: 12,
+    color: AppColors.fontSubtitleColor,
+  );
   static TextStyle font18Black = GoogleFonts.plusJakartaSans(
     fontSize: 18,
     color: AppColors.fontTitleColor,

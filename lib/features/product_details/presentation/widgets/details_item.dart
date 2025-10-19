@@ -43,7 +43,7 @@ class DetailsItem extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                BuyNowButton( ),
+                BuyNowButton(borderColor: AppColors.primaryColor, ),
                 AddToCartButtons( ),
               ],
             ),
