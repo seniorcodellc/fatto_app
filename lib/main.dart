@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'core/utils/app_colors.dart';
-import 'features/auth/forgot_password/screens/forgot_password1_screen.dart';
+import 'features/auth/forgot_password/screens/forgot_password_screen.dart';
 import 'features/auth/login/presentation/screens/login_screen.dart';
 import 'features/auth/signup/presentation/screens/number_verification_screen.dart';
 import 'features/auth/signup/presentation/screens/signup_screen.dart';
@@ -22,6 +22,7 @@ import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'features/profile/presentation/screens/change_password_screen.dart';
+import 'features/profile/presentation/screens/change_password_screen2.dart';
 import 'features/profile/presentation/screens/faqs_screen.dart';
 import 'features/profile/presentation/screens/order_history_screen.dart';
 import 'features/profile/presentation/screens/payment_method_screen.dart';
@@ -59,7 +60,7 @@ class FattoApp extends StatelessWidget {
             'number_verification_screen': (context) =>
                 NumberVerificationScreen(),
             'login_screen': (context) => LoginScreen(),
-            'forgot_password1_screen': (context) => ForgotPassword1Screen(),
+            'forgot_password1_screen': (context) => ForgotPasswordScreen(),
             'forgot_password2_screen': (context) => ForgotPassword2Screen(),
             'create_password_screen': (context) => CreatePasswordScreen(),
             'product_details_screen': (context) => ProductDetailsScreen(),
@@ -79,6 +80,7 @@ class FattoApp extends StatelessWidget {
             'privacy_policy_screen': (context) => PrivacyPolicyScreen(),
             'terms_and_conditions_screen': (context) =>
                 TermsAndConditionsScreen(),
+            "change-password-screen2": (context) => ChangePasswordScreen2(),
           },
         );
       },
