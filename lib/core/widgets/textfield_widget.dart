@@ -9,23 +9,25 @@ class TextfieldWidget extends StatelessWidget {
     required this.name,
     required this.hintText,
     this.isPassword = false,
+    this.isPhone = false,
   });
 
   final String name;
   final String hintText;
   final bool isPassword;
+  final bool isPhone;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.0.w, vertical: 16.0),
+      padding: EdgeInsets.symmetric(horizontal: 16.0.w, vertical: 10.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             name,
             style: GoogleFonts.plusJakartaSans(
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w600,
               fontSize: 14.sp,
               color: AppColors.fontTitleColor,
               letterSpacing: 0.5,
@@ -35,6 +37,7 @@ class TextfieldWidget extends StatelessWidget {
           CustomTextField(
             hintText: hintText,
             isPassword: isPassword,
+            isPhone: isPhone,
           ),
         ],
       ),
