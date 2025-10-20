@@ -4,8 +4,8 @@ class AppAssets {
   static const String iconsFrontArrow = 'assets/icons/front_arrow.svg';
   static const String tick = 'assets/icons/tick.svg';
   static const String tickFilled = 'assets/icons/tick-filled.svg';
-  static const String logOut = 'assets/icons/logout.svg';
-
+  static const String iconsLogOut = 'assets/icons/logout.svg';
+  static const String iconsBottomArrow = 'assets/icons/arrow_bottom.svg';
   static const String iconsSearchNormal = 'assets/icons/search-normal.svg';
   static const String iconsBackArrow = 'assets/icons/back_arrow.svg';
   static const String iconsBackArrowIos = 'assets/icons/back_arrow_ios.svg';
