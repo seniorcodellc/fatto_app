@@ -1,5 +1,5 @@
+import 'package:fatto/core/widgets/shared_shipping_address_widget.dart';
 import 'package:fatto/features/profile/presentation/widgets/custom_shared_profile_app_bar.dart';
-import 'package:fatto/features/profile/presentation/widgets/shipping_address_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,7 +18,7 @@ class ShippingAddressScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         child: CustomScrollView(
-          slivers: [SliverToBoxAdapter(child: ShippingAddressBody())],
+          slivers: [SliverToBoxAdapter(child: SharedShippingAddressWidget())],
         ),
       ),
     );

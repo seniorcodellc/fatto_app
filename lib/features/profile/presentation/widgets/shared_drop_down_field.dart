@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../utils/app_colors.dart';
+import '../../../../core/utils/app_colors.dart';
 
 class SharedDropDownField extends StatelessWidget {
   const SharedDropDownField({super.key, required this.hint});
