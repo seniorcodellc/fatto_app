@@ -10,7 +10,7 @@ class PaymentMethodScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: AppColors.primaryColor),
+      const SystemUiOverlayStyle(statusBarColor: AppColors.fontWhiteColor),
     );
     return Scaffold(appBar: CustomSharedProfileAppBar(title: "Payment Method"));
   }

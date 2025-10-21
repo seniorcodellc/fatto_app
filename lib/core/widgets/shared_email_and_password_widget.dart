@@ -59,6 +59,7 @@ class SharedEmailAndPasswordWidget extends StatelessWidget {
               ? TextfieldWidget(
                   name: "Confirm Password",
                   hintText: "Enter your password",
+                  isPassword: true,
                 )
               : Container(),
           SizedBox(height: 24),

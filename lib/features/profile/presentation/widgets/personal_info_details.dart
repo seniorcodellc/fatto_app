@@ -1,7 +1,6 @@
 import 'package:fatto/core/utils/app_colors.dart';
 import 'package:fatto/core/utils/app_styles.dart';
 import 'package:fatto/core/widgets/h_line.dart';
-import 'package:fatto/core/widgets/shared_back_arrow_button_icon_ios.dart';
 import 'package:fatto/features/profile/data/static/profile_details_static.dart';
 import 'package:fatto/features/profile/presentation/widgets/shared_front_arrow_button_icon.dart';
 import 'package:flutter/material.dart';

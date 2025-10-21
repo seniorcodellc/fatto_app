@@ -12,11 +12,11 @@ class CustomSharedProfileAppBar extends StatelessWidget
   final String title;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 40, left: 16, right: 16),
-      child: Column(
-        children: [
-          Row(
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 40, left: 16, right: 16),
+          child: Row(
             children: [
               IconButton(
                 onPressed: () {
@@ -27,9 +27,13 @@ class CustomSharedProfileAppBar extends StatelessWidget
               Text(title, style: AppStyles.font14Black),
             ],
           ),
-          HLine(thickness: 1, color: AppColors.borderColor),
-        ],
-      ),
+        ),
+        HLine(
+          thickness: 2,
+          color: AppColors.borderColor,
+          width: double.infinity,
+        ),
+      ],
     );
   }
 

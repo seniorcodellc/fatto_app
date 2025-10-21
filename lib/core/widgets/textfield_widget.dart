@@ -5,7 +5,7 @@ import '../utils/app_colors.dart';
 import 'custom_textfield.dart';
 
 class TextfieldWidget extends StatelessWidget {
-  TextfieldWidget({
+  const TextfieldWidget({
     super.key,
     required this.name,
     required this.hintText,

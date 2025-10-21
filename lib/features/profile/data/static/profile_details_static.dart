@@ -30,7 +30,7 @@ class ProfileDetailsStatic {
     PersonalInfoModel(
       preIcon: AppAssets.iconsTermsConditions,
       title: "Terms & Conditions",
-      route: "terms_conditions_screen",
+      route: "terms_and_conditions_screen",
     ),
     PersonalInfoModel(
       preIcon: AppAssets.iconsFAQs,

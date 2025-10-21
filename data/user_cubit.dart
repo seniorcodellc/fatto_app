@@ -33,4 +33,5 @@ class UserCubit {
 main() {
   // UserCubit userOne = UserCubit.instance!;
   UserCubit userOne = UserCubit();
+  UserCubit userTwo = UserCubit();
 }

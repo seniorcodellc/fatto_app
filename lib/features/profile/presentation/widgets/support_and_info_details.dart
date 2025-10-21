@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/h_line.dart';
-import '../../../../core/widgets/shared_back_arrow_button_icon_ios.dart';
 import '../../data/static/profile_details_static.dart';
 
 class SupportAndInfoDetails extends StatelessWidget {
@@ -35,7 +34,7 @@ class SupportAndInfoDetails extends StatelessWidget {
                 ),
                 Spacer(flex: 1),
                 SharedFrontArrowButtonIcon(
-                  route: ProfileDetailsStatic.personalInfoList[index].route!,
+                  route: ProfileDetailsStatic.supportAndInfoList[index].route!,
                 ),
               ],
             ),
