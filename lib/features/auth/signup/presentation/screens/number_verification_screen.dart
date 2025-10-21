@@ -15,7 +15,7 @@ class NumberVerificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const VerificationAppbar(),
+      appBar: const VerificationAppbar(title: 'Verification Code',),
       backgroundColor: AppColors.bgColor,
       body: SingleChildScrollView(
         child: Column(

@@ -2,6 +2,7 @@ import 'package:fatto/features/auth/forgot_password/screens/password_successfull
 import 'package:fatto/features/auth/forgot_password/screens/create_password_screen.dart';
 import 'package:fatto/features/auth/forgot_password/screens/forgot_password_screen2.dart';
 import 'package:fatto/features/categories/presentation/screens/search_screen.dart';
+import 'package:fatto/features/checkout/presentation/screens/shipping_screen.dart';
 import 'package:fatto/features/home/presentation/screens/exclusive_sales_screen.dart';
 import 'package:fatto/features/categories/presentation/screens/fashion_screen.dart';
 import 'package:fatto/features/categories/presentation/screens/product_listing_screen.dart';
@@ -18,6 +19,7 @@ import 'features/auth/signup/presentation/screens/number_verification_screen.dar
 import 'features/auth/signup/presentation/screens/signup_screen.dart';
 import 'features/bottom_navigation_bar/presentation/screens/custom_bottom_nav_bar.dart';
 import 'features/categories/presentation/screens/categories_screen.dart';
+import 'features/checkout/presentation/screens/payment_screen.dart';
 import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -78,6 +80,8 @@ class FattoApp extends StatelessWidget {
             'payment_method_screen': (context) => PaymentMethodScreen(),
             'shipping_address_screen': (context) => ShippingAddressScreen(),
             'privacy_policy_screen': (context) => PrivacyPolicyScreen(),
+            'shipping_screen': (context) => ShippingScreen(),
+            'payment_screen': (context) => PaymentScreen(),
             'terms_and_conditions_screen': (context) =>
                 TermsAndConditionsScreen(),
             "change-password-screen2": (context) => ChangePasswordScreen2(),

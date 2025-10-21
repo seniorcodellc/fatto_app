@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/utils/app_styles.dart';
 
@@ -7,11 +8,14 @@ class SharedTextStar extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(text, style: AppStyles.font14Black),
-        Text("*", style: TextStyle(color: Colors.red)),
-      ],
+    return Padding(
+      padding:  EdgeInsets.only(top: 12.0.h,bottom: 8,),
+      child: Row(
+        children: [
+          Text(text, style: AppStyles.font14Black),
+          Text("*", style: TextStyle(color: Colors.red)),
+        ],
+      ),
     );
   }
 }
