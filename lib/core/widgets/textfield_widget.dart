@@ -35,15 +35,12 @@ class TextfieldWidget extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8.0.h),
-<<<<<<< HEAD
           CustomTextField(
             hintText: hintText,
             isPassword: isPassword,
             isPhone: isPhone,
           ),
-=======
           CustomTextField(hintText: hintText, isPassword: isPassword),
->>>>>>> 898d8cbfb9c7784dc51a545b62733e91202c2b74
         ],
       ),
     );

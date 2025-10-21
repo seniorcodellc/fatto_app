@@ -1,8 +1,5 @@
 import 'package:fatto/core/utils/app_assets.dart';
-<<<<<<< HEAD
 import 'package:fatto/core/utils/app_styles.dart';
-=======
->>>>>>> 898d8cbfb9c7784dc51a545b62733e91202c2b74
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,7 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../utils/app_colors.dart';
 
 class CustomTextField extends StatelessWidget {
-   CustomTextField({
+  CustomTextField({
     super.key,
     required this.hintText,
     this.isPassword = false,
@@ -35,33 +32,33 @@ class CustomTextField extends StatelessWidget {
         style: GoogleFonts.plusJakartaSans(
           color: AppColors.fontTitleColor,
           fontWeight: FontWeight.w400,
-          fontSize:  12.sp,
+          fontSize: 12.sp,
         ),
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: AppStyles.fontHintText,
           contentPadding: EdgeInsets.symmetric(
-            vertical:  24.0.h,
-            horizontal:  16.0.w,
+            vertical: 24.0.h,
+            horizontal: 16.0.w,
           ),
           suffixIcon: isPassword
               ? Padding(
-            padding: EdgeInsets.only(right: 18.0.w),
-            child: SvgPicture.asset(AppAssets.iconsPasswordEyeIcon),
-          )
+                  padding: EdgeInsets.only(right: 18.0.w),
+                  child: SvgPicture.asset(AppAssets.iconsPasswordEyeIcon),
+                )
               : null,
           prefixIcon: isPhone
               ? Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0.w),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SvgPicture.asset(AppAssets.iconsFlag),
-                SizedBox(width: 10.w),
-                SvgPicture.asset(AppAssets.iconsBottomArrow),
-              ],
-            ),
-          )
+                  padding: EdgeInsets.symmetric(horizontal: 10.0.w),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      SvgPicture.asset(AppAssets.iconsFlag),
+                      SizedBox(width: 10.w),
+                      SvgPicture.asset(AppAssets.iconsBottomArrow),
+                    ],
+                  ),
+                )
               : null,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12.r),
