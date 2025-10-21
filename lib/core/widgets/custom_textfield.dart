@@ -1,5 +1,8 @@
 import 'package:fatto/core/utils/app_assets.dart';
+<<<<<<< HEAD
 import 'package:fatto/core/utils/app_styles.dart';
+=======
+>>>>>>> 898d8cbfb9c7784dc51a545b62733e91202c2b74
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';

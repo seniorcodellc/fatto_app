@@ -3,8 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../utils/app_colors.dart';
 import 'custom_textfield.dart';
+
 class TextfieldWidget extends StatelessWidget {
-  const TextfieldWidget({
+  TextfieldWidget({
     super.key,
     required this.name,
     required this.hintText,
@@ -34,11 +35,15 @@ class TextfieldWidget extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8.0.h),
+<<<<<<< HEAD
           CustomTextField(
             hintText: hintText,
             isPassword: isPassword,
             isPhone: isPhone,
           ),
+=======
+          CustomTextField(hintText: hintText, isPassword: isPassword),
+>>>>>>> 898d8cbfb9c7784dc51a545b62733e91202c2b74
         ],
       ),
     );
