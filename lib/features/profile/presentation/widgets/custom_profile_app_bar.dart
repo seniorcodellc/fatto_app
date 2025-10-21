@@ -49,7 +49,7 @@ class CustomProfileAppBar extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, 'login_screen');
               },
-              icon: SvgPicture.asset(AppAssets.logOut),
+              icon: SvgPicture.asset(AppAssets.iconsLogOut),
             ),
           ],
         ),

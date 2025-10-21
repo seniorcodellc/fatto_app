@@ -11,9 +11,9 @@ class ShippingIconRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        IconItem(icon: AppAssets.iconsShippingBox, name: 'Shipping', isEnabled: false,),
+        IconItem(icon: AppAssets.iconsShippingFilled, name: 'Shipping', isEnabled: true,),
         HLine(width: 48,),
-        IconItem(icon: AppAssets.iconsPayment, name: 'Payment', isEnabled: false,),
+        IconItem(icon: AppAssets.iconsPaymentFilled, name: 'Payment', isEnabled: true,),
         HLine(width: 48,),
         IconItem(icon: AppAssets.iconsReview, name: 'Review', isEnabled: false,),
       ],

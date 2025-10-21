@@ -7,7 +7,7 @@ class CustomButton extends StatelessWidget {
   final String buttonText;
   final VoidCallback? onTap;
 
-  const CustomButton(  {
+  const CustomButton({
     super.key,
     required this.buttonText,
     required this.onTap,
@@ -17,26 +17,26 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 16.0.w),
-          decoration: BoxDecoration(
-            color: AppColors.primaryColor,
-            borderRadius: BorderRadius.circular(12.r),
-          ),
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 18.0.h),
-            child: Center(
-              child: Text(
-                buttonText,
-                style: GoogleFonts.plusJakartaSans(
-                  fontSize: 14.sp,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
+      child: Container(
+        // margin: EdgeInsets.symmetric(horizontal: 16.0.w),
+        decoration: BoxDecoration(
+          color: AppColors.primaryColor,
+          borderRadius: BorderRadius.circular(12.r),
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 18.0.h),
+          child: Center(
+            child: Text(
+              buttonText,
+              style: GoogleFonts.plusJakartaSans(
+                fontSize: 14.sp,
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ),
         ),
+      ),
     );
   }
 }

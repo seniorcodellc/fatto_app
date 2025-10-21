@@ -1,9 +1,8 @@
-import 'package:fatto/core/widgets/custom_button.dart';
+import 'package:fatto/core/widgets/shared_shipping_address_widget.dart';
+import 'package:fatto/features/profile/presentation/widgets/custom_shared_profile_app_bar.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/widgets/h_line.dart';
-import '../../../../core/widgets/textfield_widget.dart';
-import '../../../../core/widgets/verification_appBar.dart';
 import '../widgets/shipping_icon_row.dart';
 class ShippingScreen extends StatelessWidget {
   const ShippingScreen({super.key});
@@ -12,21 +11,18 @@ class ShippingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const VerificationAppbar(title: ' Checkout ',),
+      appBar: const CustomSharedProfileAppBar(title: ' Checkout '),
       backgroundColor: AppColors.bgColor,
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            HLine(thickness: 3.0,),
-            SizedBox(height: 12,),
             ShippingIconRow(),
             SizedBox(height: 24,),
-            // TextfieldWidget(name: 'Full Name', hintText: 'Enter full name',),
-            // TextfieldWidget(name: 'Phone Number', hintText: '+92',isPhone: true,) ,
-            // TextfieldWidget(name: 'Street Address', hintText: 'Enter street address',),
-            // TextfieldWidget(name: 'Postal Code', hintText: 'Enter postal code',),
-            CustomButton(buttonText: 'Save', onTap: (){})
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18.0),
+              child: SharedShippingAddressWidget(),
+            )
           ],
         ),
       ),

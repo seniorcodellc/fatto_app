@@ -19,6 +19,7 @@ import 'features/auth/signup/presentation/screens/number_verification_screen.dar
 import 'features/auth/signup/presentation/screens/signup_screen.dart';
 import 'features/bottom_navigation_bar/presentation/screens/custom_bottom_nav_bar.dart';
 import 'features/categories/presentation/screens/categories_screen.dart';
+import 'features/checkout/presentation/screens/payment_screen.dart';
 import 'features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -79,6 +80,7 @@ class FattoApp extends StatelessWidget {
             'shipping_address_screen': (context) => ShippingAddressScreen(),
             'privacy_policy_screen': (context) => PrivacyPolicyScreen(),
             'shipping_screen': (context) => ShippingScreen(),
+            'payment_screen': (context) => PaymentScreen(),
             'terms_and_conditions_screen': (context) =>
                 TermsAndConditionsScreen(),
           },
