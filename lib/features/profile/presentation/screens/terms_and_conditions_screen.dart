@@ -9,7 +9,9 @@ class TermsAndConditionsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomSharedProfileAppBar(title: "Terms & Conditions"),
-      body: TermsAndConditionsBody(),
+      body: CustomScrollView(
+        slivers: [SliverToBoxAdapter(child: TermsAndConditionsBody())],
+      ),
     );
   }
 }

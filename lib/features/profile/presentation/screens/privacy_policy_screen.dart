@@ -15,7 +15,9 @@ class PrivacyPolicyScreen extends StatelessWidget {
     );
     return Scaffold(
       appBar: CustomSharedProfileAppBar(title: "Privacy Policy"),
-      body: PrivacyPolicyBody(),
+      body: CustomScrollView(
+        slivers: [SliverToBoxAdapter(child: PrivacyPolicyBody())],
+      ),
     );
   }
 }
